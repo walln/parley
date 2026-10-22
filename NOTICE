@@ -1,0 +1,11 @@
+Parley
+Copyright 2026 Parley contributors
+
+This product includes software and models developed by third parties:
+
+- Gemma 4 12B (google/gemma-4-12B-it) — Apache 2.0.
+- Mimi (kyutai/mimi) — CC-BY 4.0. Attribution required.
+- CSM-1B (sesame/csm-1b) — Apache 2.0; built on Llama 3.2 1B (Llama Community License).
+- PyTorch, Transformers, PEFT, and other dependencies under their respective licenses.
+
+See WEIGHTS_LICENSE.md for the terms that apply to released weights.

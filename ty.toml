@@ -1,0 +1,12 @@
+[src]
+include = ["src"]
+
+[terminal]
+error-on-warning = false
+output-format = "concise"
+
+[rules]
+invalid-argument-type = "warn"
+unresolved-attribute = "warn"
+call-non-callable = "warn"
+not-subscriptable = "warn"

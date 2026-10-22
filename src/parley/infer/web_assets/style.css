@@ -1,0 +1,115 @@
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #111827;
+  color: #f9fafb;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 4px;
+}
+h2 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  color: #38bdf8;
+}
+.sub {
+  color: #9ca3af;
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+}
+.card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+button {
+  background: #38bdf8;
+  color: #111827;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled {
+  background: #374151;
+  color: #9ca3af;
+  cursor: default;
+}
+a {
+  color: #38bdf8;
+}
+.status {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+.status.ready {
+  color: #34d399;
+}
+.status.busy {
+  color: #fbbf24;
+}
+.status.err {
+  color: #f87171;
+}
+.metrics {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+.metrics b {
+  color: #f9fafb;
+}
+.transcript {
+  min-height: 2.5em;
+  white-space: pre-wrap;
+}
+.error {
+  color: #f87171;
+  font-size: 0.9rem;
+}
+.fine {
+  color: #6b7280;
+  font-size: 0.78rem;
+  margin: 8px 0 0;
+}
+.hidden {
+  display: none;
+}
+.instructions p {
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+audio {
+  width: 100%;
+  margin-bottom: 8px;
+}
+button.quiet {
+  background: #374151;
+  color: #f9fafb;
+}

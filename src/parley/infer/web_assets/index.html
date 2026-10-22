@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talk to the model</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Talk to the model</h1>
+  <p class="sub"><span id="checkpoint">connecting to the bridge&hellip;</span> &middot; text sampled at 0.8, greedy audio</p>
+
+  <section class="card">
+    <div class="row">
+      <button id="start" disabled>Start talking</button>
+      <button id="stop" disabled>Stop</button>
+      <button id="shutdown" class="quiet" disabled>Shut down the GPU</button>
+    </div>
+    <p id="status" class="status">connecting&hellip;</p>
+    <div class="metrics">
+      <span>Microphone <b id="mic">&mdash;</b></span>
+      <span>Level <meter id="level" min="0" max="1" low="0.05" high="0.9" optimum="0.3" value="0"></meter></span>
+      <span>Elapsed <b id="elapsed">0.0 s</b></span>
+      <span>Round trip <b id="rtt">&mdash;</b></span>
+      <span>Playback gaps (samples) <b id="underrun">0</b></span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>What the model says</h2>
+    <p id="transcript" class="transcript"></p>
+    <p id="error" class="error"></p>
+  </section>
+
+  <section id="saved" class="card hidden">
+    <h2>Conversation saved</h2>
+    <audio id="player" controls></audio>
+    <p><a id="dl-recording" download>Stereo recording (you left, the model right)</a> &middot;
+       <a id="dl-input" download>Your microphone</a> &middot;
+       <a id="dl-details" download>Every frame (JSON)</a></p>
+  </section>
+
+  <section class="card instructions">
+    <p>The model hears everything the microphone picks up. The browser removes the model's own
+       voice when echo cancellation shows as on beside the microphone. Headphones remove it best.</p>
+    <p>Talk as you would to a person: ask something, follow up, correct it, pause mid-sentence,
+       interrupt it. Each conversation can run a few minutes and is saved on this Mac only.
+       The GPU shuts itself down after a while with no conversation, or when you press
+       &ldquo;Shut down the GPU&rdquo;.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
