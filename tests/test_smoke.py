@@ -6,6 +6,6 @@ def test_import():
 
 
 def test_constants():
-    from parley.rows import SAMPLES_PER_FRAME, FRAME_MS
+    from parley.rows import FRAME_MS, SAMPLES_PER_FRAME
     assert SAMPLES_PER_FRAME == 1280
     assert FRAME_MS == 80
