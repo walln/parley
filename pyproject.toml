@@ -50,3 +50,15 @@ line-length = 120
 select = ["E", "F", "I"]
 [tool.ty.environment]
 python-version = "3.12"
+[tool.ty.src]
+include = ["src"]
+
+[tool.ty.terminal]
+error-on-warning = false
+output-format = "concise"
+
+[tool.ty.rules]
+invalid-argument-type = "warn"
+unresolved-attribute = "warn"
+call-non-callable = "warn"
+not-subscriptable = "warn"
