@@ -11,10 +11,16 @@ Research-only weights. See `WEIGHTS_LICENSE.md`.
 uv sync
 ```
 
+## Download weights
+
+```bash
+uv run parley download walln/parley --out checkpoints/parley
+```
+
 ## Serve
 
 ```bash
-uv run parley serve --checkpoint /path/to/checkpoint --prompt "You are a helpful assistant."
+uv run parley serve --checkpoint checkpoints/parley --prompt "You are a helpful assistant."
 ```
 
 ## License
