@@ -3,6 +3,10 @@
 A full-duplex speech model: Gemma 4 12B listens while it talks and decides every 80 ms
 whether to speak, keep speaking, or listen. CSM-1B speaks its words.
 
+How it works and how it was trained:
+[Inside Frankenstein's lab: a full-duplex model at home](https://walln.dev/blog/full-duplex-at-home/).
+Weights: [walln/parley](https://huggingface.co/walln/parley) on Hugging Face.
+
 Research-only weights. See `WEIGHTS_LICENSE.md`.
 
 ## Setup
